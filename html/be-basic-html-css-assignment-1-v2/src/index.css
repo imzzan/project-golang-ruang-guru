@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.text-content {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222831;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar > a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 300px;
+    height: 100vh;
+    color: white;
+    background-color: #222831;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.hero-section > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.experiance-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 300px;
+    height: 100vh;
+}
+
+.experiance-section > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 0 300px;
+    height: 100vh;
+    color: white;
+    background-color: #222831;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.contact-section > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.form-message {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form-message > input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 0 10px;
+}
+
+.form-message > textarea {
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.form-message > button {
+    width: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+    .hero-section, .experiance-section, .contact-section {
+        grid-template-columns: auto;
+    }
+  }
